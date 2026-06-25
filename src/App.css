@@ -182,3 +182,139 @@
     border-right-color: var(--border);
   }
 }
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #1f2937;
+}
+
+.App header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.App header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
+}
+
+.App header p {
+  margin: 10px auto 0;
+  max-width: 620px;
+  color: #475569;
+}
+
+.mascotas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.mascota-card {
+  padding: 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mascota-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 44px rgba(15, 23, 42, 0.1);
+}
+
+.mascota-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.mascota-header h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.especie-label {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #64748b;
+}
+
+.mascota-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+  margin-bottom: 16px;
+  color: #334155;
+}
+
+.mascota-meta span {
+  font-size: 0.95rem;
+}
+
+.mascota-descripcion {
+  margin: 0 0 16px;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.mascota-caracteristicas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mascota-caracteristicas li {
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.urgente-badge {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #ef4444;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.especie-perro {
+  border-color: #60a5fa;
+  background: #eff6ff;
+}
+
+.especie-gato {
+  border-color: #f472b6;
+  background: #fdf2f8;
+}
+
+.especie-otro {
+  border-color: #fb923c;
+  background: #fff7ed;
+}
+
+@media (max-width: 640px) {
+  .mascota-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .mascota-caracteristicas {
+    grid-template-columns: 1fr;
+  }
+}

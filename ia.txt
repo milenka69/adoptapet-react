@@ -9,4 +9,32 @@ respuesta:
 
 este sirvio para realizar el inicio del proyecto, teniendo una base sencilla y ordenada de la aplicación, haciendo una importación de array de mascotas.js a App.jsx
 
+Etapa 2
+
+prompt
+"lo siguiente que necesito realizar es que el componente reciba props (nombre, raza, edad, especie, descripción, caracteristicas)
+muestre la información de forma visual y ordenada, aplicando un estilo diferenciado a cada especie."
+
+respuesta:
+ El componente MascotasCard ahora recibe props y App.jsx lo usa correctamente.
+
+Ha sido de gran utilidad, le dio más forma y estilo al proyecto, cumpliendo con lo requerido y satisfaciendo las expectativas.
+
+prompt
+"necesito aplicar buenas practicas, quiero que revises si estas se cumplen y si no, arreglalo.
+-define los tipos de las props con propType y entrega valores por defecto
+-renderiza el texto con jsx normal, no dangerouslySetlnnerHTML
+-no dejar credenciales, claves ni datos sensibles en el codigo."
+
+respuesta:
+Estado de buenas prácticas:
+
+MascotasCard usa prop-types para validar props.
+ Se agregaron defaultProps para descripcion, caracteristicas y adopcionUrgente.
+ No se usa dangerouslySetInnerHTML.
+ No se detectaron credenciales, claves ni datos sensibles en el código del proyecto.
+
+Se necesito de este prompt para poder aplicar buenas prácticas con mayor seguridad y efectividad.
+Pero apesar de su buena respuesta, el cambio se descartó ya que arrojaba error y dañaba el avance.
+
 

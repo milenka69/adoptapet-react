@@ -1,4 +1,6 @@
+import './App.css'
 import { mascotas } from './data/mascotas.js'
+import MascotasCard from './components/MascotasCard.jsx'
 
 function App() {
   return (
@@ -10,19 +12,16 @@ function App() {
 
       <section className="mascotas-list">
         {mascotas.map((mascota) => (
-          <article
+          <MascotasCard
             key={mascota.id}
-            className={`mascota-card ${mascota.adopcionUrgente ? 'urgente' : ''}`}
-          >
-            <h2>{mascota.nombre}</h2>
-            <p><strong>Especie:</strong> {mascota.especie}</p>
-            <p><strong>Raza:</strong> {mascota.raza}</p>
-            <p><strong>Edad:</strong> {mascota.edad} año{mascota.edad === 1 ? '' : 's'}</p>
-            <p>{mascota.descripcion}</p>
-            {mascota.adopcionUrgente && (
-              <span className="urgente-badge">Adopción urgente</span>
-            )}
-          </article>
+            nombre={mascota.nombre}
+            raza={mascota.raza}
+            edad={mascota.edad}
+            especie={mascota.especie}
+            descripcion={mascota.descripcion}
+            caracteristicas={mascota.caracteristicas}
+            adopcionUrgente={mascota.adopcionUrgente}
+          />
         ))}
       </section>
     </main>
