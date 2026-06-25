@@ -2,7 +2,7 @@ function MascotasCard({ nombre, raza, edad, especie, descripcion, caracteristica
   const especieClass = `especie-${especie.toLowerCase().replace(/\s+/g, '-')}`
 
   return (
-    <article className={`mascota-card ${especieClass}`}>
+    <article className={`mascota-card ${especieClass} ${adopcionUrgente ? 'urgente' : ''}`}>
       <header className="mascota-header">
         <div>
           <h2>{nombre}</h2>

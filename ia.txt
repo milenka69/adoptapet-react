@@ -68,5 +68,16 @@ respuesta:
 Este prompt fue completamente útil, logrando el objetivo principal y entregando unos botones y barra de busqueda completamente utiles y efectivos.
 
 
+Etapa 5 
+
+prompt
+"para esta etapa necesito destacar mejor las adopciones urgentes, resaltando visualmente los elementos con adopcionUrgente : true, agregar un contador de cuantas adopciones urgentes existen y por ultimo verifica que toda la app corra sin ningún error y cumpla con todo lo solicitado"
+
+respuesta:
+ Listo: añadí el contador de adopciones urgentes y el estilo de resaltado para los cards con adopcionUrgente: true
+
+este fue de gran utilidad, aportando con un resaltado mejor en las adopciones urgentes y un contador bien realizado, además de realizar una buena revisión final, sin encontrar algún error en la app.
+
+
 
 

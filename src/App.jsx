@@ -20,6 +20,8 @@ function App() {
     return coincideEspecie && coincideBusqueda
   })
 
+  const adopcionesUrgentes = mascotasFiltradas.filter((mascota) => mascota.adopcionUrgente).length
+
   return (
     <main className="App">
       <header>
@@ -33,6 +35,11 @@ function App() {
         busqueda={busqueda}
         onBusquedaChange={setBusqueda}
       />
+
+      <div className="adopciones-urgentes">
+        <span className="urgente-contador">{adopcionesUrgentes}</span>
+        <span>{adopcionesUrgentes === 1 ? 'adopción urgente encontrada' : 'adopciones urgentes encontradas'}</span>
+      </div>
 
       {mascotasFiltradas.length > 0 ? (
         <ListaMascotas mascotas={mascotasFiltradas} />
