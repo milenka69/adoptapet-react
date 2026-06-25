@@ -50,8 +50,22 @@ respuesta:
 el uso de este prompt dio un buen resultado, logrando lo necesitado a la perfección.
 
 
+Etapa 4
 
+prompt
+"para la nueva etapa necesito que se realice un estado y filtro seguro, colocando botones o selector en FiltroEspecio para que filtre por especie a los animales (Todas, perro, gato, otro), además también se necesita un useState en app.jsx para así guardar el filtro seleccionado, aparte de un campo de búsqueda por nombre, 
+este debe ser un componente controlado. Aplica ambos filtros sobre el array antes ser pasado por ListaMascotas y finalmente realiza un renderizado condicional para mostrar el mensaje de "No hay mascotas que coincidan" cuando el resultado este vacio. una ultima petición es que se valide y normalice el texto de búsqueda 
+antes de usarlo."
 
+respuesta:
+ Todo quedó configurado:
+ App.jsx usa useState para especieSeleccionada y busqueda.
+ FiltroEspecie.jsx tiene botones de filtro y un input controlado.
+ El filtro se aplica antes de pasar mascotas a ListaMascotas.
+ Se normaliza el texto de búsqueda con trim() y toLowerCase().
+ Se muestra el mensaje "No hay mascotas que coincidan" cuando no hay resultados.
+
+Este prompt fue completamente útil, logrando el objetivo principal y entregando unos botones y barra de busqueda completamente utiles y efectivos.
 
 
 
