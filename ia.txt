@@ -1,0 +1,12 @@
+Etapa 1
+
+prompt
+"tengo que realizar un proyecto que tiene que ver con un refugio de animales, donde se hará una aplicación web SPA simplpe, ordenada y segura, donde se verá las mascotas con especies y resaltar casos de adopción urgente.
+Realice un data que contiene mascotas.js. para empezar necesito que importes el array a App.jsx"
+
+respuesta:
+ App.jsx ya importa el array desde mascotas.js y muestra una lista básica de mascotas.
+
+este sirvio para realizar el inicio del proyecto, teniendo una base sencilla y ordenada de la aplicación, haciendo una importación de array de mascotas.js a App.jsx
+
+
