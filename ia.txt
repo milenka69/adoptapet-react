@@ -9,6 +9,7 @@ respuesta:
 
 este sirvio para realizar el inicio del proyecto, teniendo una base sencilla y ordenada de la aplicación, haciendo una importación de array de mascotas.js a App.jsx
 
+
 Etapa 2
 
 prompt
@@ -36,5 +37,22 @@ MascotasCard usa prop-types para validar props.
 
 Se necesito de este prompt para poder aplicar buenas prácticas con mayor seguridad y efectividad.
 Pero apesar de su buena respuesta, el cambio se descartó ya que arrojaba error y dañaba el avance.
+
+
+Etapa 3
+
+prompt
+"necesito que este componente reciba el array de mascotas por props, también recorra el array con .map() y que renderice un MascotaCard por mascota. Además necesito que se asigne correctamente la prop key usando id de cada elemendo (no usar indice del array) y finalmente renderiza ListaMascotas pasando datos importados."
+
+respuesta:
+ Actualizando App.jsx para pasar los datos a ListaMascotas, y llenando ListaMascotas.jsx con el mapeo correcto.
+
+el uso de este prompt dio un buen resultado, logrando lo necesitado a la perfección.
+
+
+
+
+
+
 
 

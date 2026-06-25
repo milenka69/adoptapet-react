@@ -1,6 +1,6 @@
 import './App.css'
 import { mascotas } from './data/mascotas.js'
-import MascotasCard from './components/MascotasCard.jsx'
+import ListaMascotas from './components/ListaMascotas.jsx'
 
 function App() {
   return (
@@ -10,20 +10,7 @@ function App() {
         <p>Lista de mascotas disponibles para adopción.</p>
       </header>
 
-      <section className="mascotas-list">
-        {mascotas.map((mascota) => (
-          <MascotasCard
-            key={mascota.id}
-            nombre={mascota.nombre}
-            raza={mascota.raza}
-            edad={mascota.edad}
-            especie={mascota.especie}
-            descripcion={mascota.descripcion}
-            caracteristicas={mascota.caracteristicas}
-            adopcionUrgente={mascota.adopcionUrgente}
-          />
-        ))}
-      </section>
+      <ListaMascotas mascotas={mascotas} />
     </main>
   )
 }
